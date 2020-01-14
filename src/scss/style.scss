@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "SeattleSans";
+  src: url("../fonts/SeattleSans.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/SeattleSans.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/SeattleSans.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/SeattleSans.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/SeattleSans.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/SeattleSans.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/SeattleSans.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+    margin: 0;
+}
+
+
+h1{
+    font-family: "SeattleSans";
+}
