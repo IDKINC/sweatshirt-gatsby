@@ -49,7 +49,7 @@ export const pageQuery = graphql`
 query HomePageQuery {
   mainBanner: file(relativePath: { eq: "sweatshirt-banner.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1200) {
+          fluid(maxWidth: 2400) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -63,7 +63,7 @@ query HomePageQuery {
           title
           featuredImage {
             childImageSharp {
-              fluid(maxWidth: 1200) {
+              fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
           }
             }

@@ -10,7 +10,7 @@ const StyledGrid = styled.div`
     background: #fff;
     padding: 0.5em;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     width: 100%;
     grid-gap: 1em;
 `
