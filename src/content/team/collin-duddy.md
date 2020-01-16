@@ -4,4 +4,5 @@ title: "CEO"
 twitter: "LoboExplosivo"
 instagram: "collinduddy"
 featuredImage: "./collin-duddy.jpg"
+weight: 100
 ---

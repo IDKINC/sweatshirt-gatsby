@@ -32,6 +32,11 @@ const descriptors = [
                 name: 'ogImage',
                 getter: node => node.frontmatter.ogImage,
                 defaultValue: ''
+            },
+            {
+                name: 'weight',
+                getter: node => node.frontmatter.weight,
+                defaultValue: 0
             }
         ]
     }
@@ -86,7 +91,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           title
           featuredImage {
             childImageSharp {
-              resize(width: 500, height: 500, cropFocus: CENTER) {
+              resize(width: 500) {
                 src
               }
             }

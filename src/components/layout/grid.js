@@ -1,18 +1,21 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-
+import React from "react"
 import styled from "styled-components"
 
-import React from "react"
-import Img from 'gatsby-image'
+import {breakpoints} from "../breakpoints"
 
 const StyledGrid = styled.div`
     background: #fff;
     padding: 0.5em;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
     width: 100%;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em;
+    align-items: flex-start;
+
+    @media ${breakpoints.laptop}{
+        grid-template-columns: repeat(5, 1fr);
+
+    }
 `
 
 const Grid = ({ children }) => (

@@ -9,11 +9,12 @@ import Img from 'gatsby-image'
 
 
 import TeamCard from "../components/team/team__card"
-import Grid from "../components/layout/Grid"
+import Grid from "../components/layout/grid"
 
 
 const Container = styled.section`
   width: 100%;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +33,15 @@ const IndexPage = ({ data }) => {
       <Img fluid={data.mainBanner.childImageSharp.fluid} style={{ width: "100%", height: "100%" }} />
     </Container>
     <Container>
-      <h1>Meet The Team</h1>
+      <h1>We Are Makers.</h1>
+    </Container>
+
+    <Container>
+      <h1>We Are Storytellers.</h1>
+    </Container>
+
+    <Container>
+      <h1>This Is Who We Are.</h1>
       <Grid>
         {members.map(({ node: member }) => (<TeamCard person={member} />))}
       </Grid>
@@ -54,7 +63,7 @@ query HomePageQuery {
           }
         }
       }
-  team: allMarkdownRemark {
+  team: allMarkdownRemark(sort: {fields: fields___weight, order: DESC}) {
     edges {
       node {
         id
@@ -63,9 +72,9 @@ query HomePageQuery {
           title
           featuredImage {
             childImageSharp {
-              fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
+              resize(width: 500) {
+                src
+              }
             }
           }
         }

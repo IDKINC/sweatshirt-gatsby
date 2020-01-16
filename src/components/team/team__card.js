@@ -9,6 +9,27 @@ import Img from 'gatsby-image'
 const Card = styled.div`
     background: #fff;
     padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    min-width: 100%;
+    img{
+        width: 100%;
+        height: auto;
+    }
+`
+
+const Meta = styled.div`
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 0.5em 0;
+width: 100%;
+
+h4,h5{
+    margin: 0;
+}
 `
 
 const TeamCard = ({ person }) => (
@@ -17,10 +38,13 @@ const TeamCard = ({ person }) => (
                     to={person.fields.slug}
                 style={{ textDecoration: `none`, color: "#212121"}}
                 >
-        <Img fluid={person.frontmatter.featuredImage.childImageSharp.fluid} />
-            <h1 style={{ margin: 0 }}>
+        <img src={person.frontmatter.featuredImage.childImageSharp.resize.src}/>
+        <Meta>
+            <h4>
                     {person.frontmatter.name}
-            </h1>
+            </h4>
+            <h5>{person.frontmatter.title}</h5>
+            </Meta>
                 </Link>
     </Card>
 )
