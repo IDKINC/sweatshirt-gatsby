@@ -106,7 +106,7 @@ const IndexPage = ({ data }) => {
       </Container>
       <Container>
         <h1>We Are Makers.</h1>
-        <Grid col={3} style={{ gridGap: 0, gridRowGap: "1em" }}>
+        <Grid col={3} style={{ gridGap: 0, gridRowGap: "2rem" }}>
           {projects.map(({ node: project }) => (
             <ProjectCard project={project} />
           ))}

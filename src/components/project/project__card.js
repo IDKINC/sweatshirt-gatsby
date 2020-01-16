@@ -13,6 +13,7 @@ const Card = styled.div`
   justify-content: center;
   flex-direction: row;
   min-width: 100%;
+  border-bottom: 10px solid #000;
   img {
     width: 100%;
     height: auto;
