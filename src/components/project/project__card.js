@@ -7,7 +7,7 @@ import React from "react"
 
 const Card = styled.div`
   background: #fff;
-  padding: 0.5em;
+  // padding: 0.5em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,11 +24,15 @@ const Meta = styled.div`
   align-items: center;
   justify-content: space-between;
   margin: 0.5em 0;
+  padding: 0 1em;
   width: 100%;
 
   h4,
   h5 {
     margin: 0;
+  }
+  h5{
+    text-align: right;
   }
 `
 
