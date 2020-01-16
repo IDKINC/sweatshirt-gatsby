@@ -1,6 +1,6 @@
 ---
 name: "Jose Hadathy"
-title: "Designer"
+title: "Artisanal Artisan of Artistry"
 twitter: "josehadathy"
 instagram: "jhadathy"
 featuredImage: "./jose-hadathy.jpg"

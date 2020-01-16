@@ -1,6 +1,6 @@
 ---
 name: "Peach Quintana"
-title: "Designer"
+title: "Literally A Peach"
 twitter: "PeachQuintana"
 instagram: "PeachQuintana"
 featuredImage: "./peach-quintana.jpg"

@@ -25,16 +25,16 @@ const Card = styled.div`
 `
 
 const Meta = styled.div`
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: space-between;
+  grid-template-columns: 1fr;
   margin: 0.5em 0;
   width: 100%;
-    flex-direction: column;
-
 
   @media ${breakpoints.laptop} {
-    flex-direction: row;
+  grid-template-columns: 1fr 1fr;
+
   }
 
   h4,
@@ -42,6 +42,23 @@ const Meta = styled.div`
     margin: 0;
     text-align: center;
   }
+
+  h5{
+      font-family: "Roboto";
+      font-size: 1rem;
+
+
+  }
+
+    @media ${breakpoints.laptop} {
+    h4{
+      text-align: left;
+    }
+    h5{
+      text-align: right;
+    }
+  }
+  
 `
 
 const TeamCard = ({ person }) => (

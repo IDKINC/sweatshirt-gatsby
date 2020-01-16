@@ -1,6 +1,6 @@
 ---
 name: "Jack Harner"
-title: "Developer"
+title: "Senior Web Wizard"
 twitter: "jackharner"
 instagram: "jackharner"
 featuredImage: "./jack-harner.jpg"

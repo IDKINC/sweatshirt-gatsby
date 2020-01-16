@@ -1,8 +1,8 @@
 ---
 name: "Jay Huffman"
-title: "COO"
+title: "CEO (Chief Executive Officer)"
 twitter: "misterjhuffman"
 instagram: "misterjhuffman"
 featuredImage: "./jay-huffman.jpg"
-weight: 99
+weight: 100
 ---
