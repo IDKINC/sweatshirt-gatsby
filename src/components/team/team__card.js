@@ -5,6 +5,8 @@ import styled from "styled-components"
 
 import React from "react"
 import Img from "gatsby-image"
+import { breakpoints } from "../breakpoints"
+
 
 const Card = styled.div`
   background: #fff;
@@ -18,6 +20,8 @@ const Card = styled.div`
     width: 100%;
     height: auto;
   }
+
+  
 `
 
 const Meta = styled.div`
@@ -26,10 +30,17 @@ const Meta = styled.div`
   justify-content: space-between;
   margin: 0.5em 0;
   width: 100%;
+    flex-direction: column;
+
+
+  @media ${breakpoints.laptop} {
+    flex-direction: row;
+  }
 
   h4,
   h5 {
     margin: 0;
+    text-align: center;
   }
 `
 
