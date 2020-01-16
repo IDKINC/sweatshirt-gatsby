@@ -4,7 +4,6 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 
 import React from "react"
-import Img from "gatsby-image"
 
 const Card = styled.div`
   background: #fff;
@@ -33,27 +32,30 @@ const Meta = styled.div`
   }
 `
 
-const TeamCard = ({ person }) => (
+const ProjectCard = ({ project }) => (
   <Card>
     <Link
-      to={person.fields.slug}
+      to={project.fields.slug}
       style={{ textDecoration: `none`, color: "#212121" }}
     >
-      <img src={person.frontmatter.featuredImage.childImageSharp.resize.src} />
+      <img src={project.frontmatter.featuredImage.childImageSharp.resize.src} />
       <Meta>
-        <h4>{person.frontmatter.name}</h4>
-        <h5>{person.frontmatter.title}</h5>
+        <h4>{project.frontmatter.title}</h4>
+        <h5>
+          {project.fields.type}{" "}
+          {project.fields.clients.length ? "for " + project.fields.clients : ""}
+        </h5>
       </Meta>
     </Link>
   </Card>
 )
 
-TeamCard.propTypes = {
-  person: PropTypes.object,
+ProjectCard.propTypes = {
+  project: PropTypes.object,
 }
 
-TeamCard.defaultProps = {
-  person: ``,
+ProjectCard.defaultProps = {
+  project: ``,
 }
 
-export default TeamCard
+export default ProjectCard

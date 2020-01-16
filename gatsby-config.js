@@ -20,6 +20,13 @@ module.exports = {
         path: `${__dirname}/src/content/team`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `portfolio`,
+        path: `${__dirname}/src/content/portfolio`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
